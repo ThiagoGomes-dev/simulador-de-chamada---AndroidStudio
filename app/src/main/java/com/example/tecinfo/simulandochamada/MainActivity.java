@@ -32,15 +32,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnlogin = findViewById(R.id.btn_login);
         TextView register = findViewById(R.id.txt_register);
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 }
